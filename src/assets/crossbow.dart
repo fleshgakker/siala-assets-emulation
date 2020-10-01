@@ -1,7 +1,5 @@
 import '../fabric.dart';
 
-//import 'package:meta/meta.dart';
-
 class Crossbow implements Weapon {
   final String description = "Crossbow";
   final minDamage = 12;
