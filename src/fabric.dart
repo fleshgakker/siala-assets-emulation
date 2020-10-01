@@ -52,9 +52,8 @@ int Round([minDamage, maxDamage, critRange, critMod, attacksPerRound]) {
     int damageRoll = damage(minDamage, maxDamage);
     int attackRoll = attack();
 
-    amountDamage += (attackRoll >= (critRange - 2))
-        ? damageRoll * (critMod + 1)
-        : damageRoll;
+    amountDamage +=
+        (attackRoll >= critRange) ? damageRoll * critMod : damageRoll;
   }
 
   return amountDamage;
