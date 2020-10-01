@@ -1,0 +1,1 @@
+NWN Siala shard assets emulation
